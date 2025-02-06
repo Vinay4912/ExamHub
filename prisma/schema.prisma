@@ -9,7 +9,14 @@ datasource db {
     provider = "postgresql"
     url      = env("DATABASE_URL")
 }
-
+model Post {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  name      String
+  
+  @@map("posts") // Optional: explicitly specify table name
+}
 model User {
     id String @id @default(cuid())
     email String @unique
