@@ -18,9 +18,11 @@ model Post {
   @@map("posts") // Optional: explicitly specify table name
 }
 model User {
-    id String @id @default(cuid())
-    email String @unique
+    id        String   @id @default(cuid())
+    email     String   @unique
     firstname String
-    lastname String
-    imageUrl String?
+    lastname  String
+    imageUrl  String?
+    createdAt DateTime @default(now())     // Add this
+    updatedAt DateTime @updatedAt          // Add this
 }
