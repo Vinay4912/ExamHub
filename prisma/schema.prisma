@@ -26,3 +26,57 @@ model User {
     createdAt DateTime @default(now())     // Add this
     updatedAt DateTime @updatedAt          // Add this
 }
+
+
+
+model Exam {
+  id              String    @id @default(cuid())
+  name            String    @unique
+  examType        String
+  conductingBody  String
+  category        String
+  applicationStart DateTime
+  applicationEnd   DateTime
+  examDate        DateTime
+  officialWebsite String
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+  lastScraped     DateTime  @default(now())
+  status          ExamStatus?
+  eligibility     Eligibility?
+  notifications   Notification[]
+}
+
+model ExamStatus {
+  id           String    @id @default(cuid())
+  examId       String    @unique
+  exam         Exam      @relation(fields: [examId], references: [id])
+  admitCard    Boolean   @default(false)
+  results      Boolean   @default(false)
+  lastChecked  DateTime  @default(now())
+}
+
+model Eligibility {
+  id           String    @id @default(cuid())
+  examId       String    @unique
+  exam         Exam      @relation(fields: [examId], references: [id])
+  education    String
+  ageLimit     String
+  nationality  String
+}
+
+model Notification {
+  id        String    @id @default(cuid())
+  examId    String
+  exam      Exam      @relation(fields: [examId], references: [id])
+  type      NotificationType
+  message   String
+  createdAt DateTime  @default(now())
+}
+
+enum NotificationType {
+  NEW_EXAM
+  DATE_CHANGE
+  ADMIT_CARD
+  RESULTS
+}
