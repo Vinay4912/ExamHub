@@ -1,33 +1,79 @@
+// {
+//   "compilerOptions": {
+//     /* Base Options: */
+//     "esModuleInterop": true,
+//     "skipLibCheck": true,
+//     "target": "es2022",
+//     "allowJs": true,
+//     "resolveJsonModule": true,
+//     "moduleDetection": "force",
+//     "isolatedModules": true,
+//     /* Strictness */
+//     "strict": true,
+//     "noUncheckedIndexedAccess": true,
+//     "checkJs": true,
+//     /* Bundled projects */
+//     "lib": ["dom", "dom.iterable", "ES2022"],
+//     "noEmit": true,
+//     "module": "ESNext",
+//     "moduleResolution": "Bundler",
+//     "jsx": "preserve",
+//     "plugins": [{ "name": "next" }],
+//     "incremental": true,
+//     /* Path Aliases */
+//     "baseUrl": ".",
+//     "paths": {
+//       "@/*": ["./src/*"]
+//     }
+//   },
+//   "include": [
+//     ".eslintrc.cjs",
+//     "next-env.d.ts",
+//     "**/*.ts",
+//     "**/*.tsx",
+//     "**/*.cjs",
+//     "**/*.js",
+//     ".next/types/**/*.ts"
+//   ],
+//   "exclude": ["node_modules"]
+// }
 {
   "compilerOptions": {
-    /* Base Options: */
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "target": "es2022",
-    "allowJs": true,
-    "resolveJsonModule": true,
-    "moduleDetection": "force",
-    "isolatedModules": true,
-
-    /* Strictness */
-    "strict": true,
-    "noUncheckedIndexedAccess": true,
-    "checkJs": true,
-
-    /* Bundled projects */
-    "lib": ["dom", "dom.iterable", "ES2022"],
-    "noEmit": true,
+    /* Language and Module Support */
+    "target": "ES2022",
     "module": "ESNext",
     "moduleResolution": "Bundler",
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ES2022"
+    ],
     "jsx": "preserve",
-    "plugins": [{ "name": "next" }],
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "checkJs": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
     "incremental": true,
-
+    "moduleDetection": "force",
+    "noEmit": true,
+    /* Strictness and Safety */
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
     /* Path Aliases */
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
-    }
+      "@/*": [
+        "./src/*"
+      ]
+    },
+    /* Next.js plugin for type support */
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
   "include": [
     ".eslintrc.cjs",
@@ -38,5 +84,7 @@
     "**/*.js",
     ".next/types/**/*.ts"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules"
+  ]
 }
