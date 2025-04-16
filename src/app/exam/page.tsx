@@ -509,6 +509,7 @@ export default function ExamPage() {
       setTotalRecords(total);
       setLastUpdated(new Date().toLocaleString());
       setError(null);
+      console.log("Sample exam data:", data.slice(0, 3));
     } catch (error) {
       console.error("Error fetching exams:", error);
       setError("Failed to load exams. Please try again later.");
@@ -517,7 +518,6 @@ export default function ExamPage() {
       setRefreshing(false);
     }
   }
-
 
   // Initial setup and data fetch
   useEffect(() => {
@@ -733,6 +733,14 @@ export default function ExamPage() {
                         target="_blank"
                         rel="noopener noreferrer"
                         className="w-full block text-center px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors duration-200"
+                        onClick={(e) => {
+                          if (!exam.exam_link) {
+                            e.preventDefault();
+                            console.log("No valid link available");
+                          } else {
+                            console.log("Navigating to:", exam.exam_link);
+                          }
+                        }}
                       >
                         View Details
                       </a>
