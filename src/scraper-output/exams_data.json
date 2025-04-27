@@ -2550,16 +2550,6 @@
     "status": "Result Declared"
   },
   {
-    "id": "25226",
-    "short_name": "IIIT Kottayam Ph.D. Written Test August 2025",
-    "full_name": "Indian Institute of Information Technology, Kottayam Ph.D. Written Test August 2025",
-    "exam_link": "https://www.mynextexam.com/exam/iiit-kottayam-phd-written-test-august",
-    "exam_mode": "Written",
-    "application_dates": "09 Apr, 2025 - 09 May, 2025",
-    "exam_dates": "16 May, 2025",
-    "status": "Apply Now"
-  },
-  {
     "id": "24486",
     "short_name": "IIITH LEEE 2025",
     "full_name": "International Institute of Information Technology Lateral Entry Entrance Examination 2025",
@@ -2577,16 +2567,6 @@
     "exam_mode": "Online",
     "application_dates": "04 Feb, 2025 - 23 Mar, 2025",
     "exam_dates": "19 Apr, 2025",
-    "status": "Exam Coming Up"
-  },
-  {
-    "id": "25228",
-    "short_name": "IIM Rohtak IPM Admission Test 2025",
-    "full_name": "Indian Institute of Management, Rohtak IPM Admission Test 2025",
-    "exam_link": "https://www.mynextexam.com/exam/iim-rohtak-ipm-admission-test",
-    "exam_mode": "Online",
-    "application_dates": "06 Feb, 2025 - 11 Apr, 2025",
-    "exam_dates": "05 May, 2025",
     "status": "Exam Coming Up"
   },
   {
@@ -2628,16 +2608,6 @@
     "application_dates": "27 Mar, 2025 - 09 May, 2025",
     "exam_dates": "20 Jun, 2025",
     "status": "Apply Now"
-  },
-  {
-    "id": "25230",
-    "short_name": "INI CET 2025 July Session",
-    "full_name": "Institute of National Importance Combined Entrance Test Post Graduate Courses 2025 July Session",
-    "exam_link": "https://www.mynextexam.com/exam/ini-cet-july-session",
-    "exam_mode": "Online",
-    "application_dates": "10 Mar, 2025 - 15 Apr, 2025",
-    "exam_dates": "17 May, 2025",
-    "status": "Exam Coming Up"
   },
   {
     "id": "24088",
@@ -3138,16 +3108,6 @@
     "application_dates": "01 Feb, 2025 - 18 Apr, 2025",
     "exam_dates": "N/A",
     "status": "Apply Now"
-  },
-  {
-    "id": "25232",
-    "short_name": "ISI Admission Test 2025",
-    "full_name": "Indian Statistical Institute Admission Test 2025",
-    "exam_link": "https://www.mynextexam.com/exam/isi-admission-test",
-    "exam_mode": "Written",
-    "application_dates": "28 Feb, 2025 - 31 Mar, 2025",
-    "exam_dates": "11 May, 2025",
-    "status": "Exam Coming Up"
   },
   {
     "id": "24122",
@@ -7830,8 +7790,6 @@
     "status": "Admission Over"
   },
   {
-<<<<<<< HEAD
-=======
     "id": "23798",
     "short_name": "HPBOSE CET D.El.Ed. 2024",
     "full_name": "Himachal Pradesh Board of School Education Common Entrance Test for Diploma (Elementary Education) 2024",
@@ -7842,7 +7800,6 @@
     "status": "Admission Over"
   },
   {
->>>>>>> 1cf1fe5bab816ef37d3e8a3fe74d6b748c5cf628
     "id": "23680",
     "short_name": "HPU Entrance Exam (BBA / BCA) 2024",
     "full_name": "Himachal Pradesh University Entrance Exam for Bachelor of Business Administration and Bachelor of Computer Applications 2024",
@@ -8053,8 +8010,6 @@
     "status": "Admission Over"
   },
   {
-<<<<<<< HEAD
-=======
     "id": "23800",
     "short_name": "IIIT Kottayam Ph.D. Written Test August 2024",
     "full_name": "Indian Institute of Information Technology, Kottayam Ph.D. Written Test August 2024",
@@ -8075,7 +8030,6 @@
     "status": "Admission Over"
   },
   {
->>>>>>> 1cf1fe5bab816ef37d3e8a3fe74d6b748c5cf628
     "id": "23802",
     "short_name": "IIPE Entrance Exam Ph.D. 2024",
     "full_name": "Indian Institute of Petroleum and Energy Entrance Exam for Doctor of Philosophy 2024",
@@ -8146,12 +8100,6 @@
     "status": "Admission Over"
   },
   {
-<<<<<<< HEAD
-    "id": "23070",
-    "short_name": "INI SS 2024 July Session",
-    "full_name": "Institute of National Importance Super Speciality Courses 2024 July Session",
-    "exam_link": "https://www.mynextexam.com/exam/ini-ss-2024-july-session",
-=======
     "id": "23826",
     "short_name": "INI CET 2024 July Session",
     "full_name": "Institute of National Importance Combined Entrance Test Post Graduate Courses 2024 July Session",
@@ -8166,7 +8114,6 @@
     "short_name": "INI SS 2024 July Session",
     "full_name": "Institute of National Importance Super Speciality Courses 2024 July Session",
     "exam_link": "https://www.mynextexam.com/exam/ini-ss-july-session",
->>>>>>> 1cf1fe5bab816ef37d3e8a3fe74d6b748c5cf628
     "exam_mode": "Online",
     "application_dates": "27 Mar, 2024 - 10 Apr, 2024",
     "exam_dates": "27 Apr, 2024",
@@ -8233,8 +8180,6 @@
     "status": "Admission Over"
   },
   {
-<<<<<<< HEAD
-=======
     "id": "22592",
     "short_name": "ISI Admission Test 2024",
     "full_name": "Indian Statistical Institute Admission Test 2024",
@@ -8245,7 +8190,6 @@
     "status": "Admission Over"
   },
   {
->>>>>>> 1cf1fe5bab816ef37d3e8a3fe74d6b748c5cf628
     "id": "22478",
     "short_name": "JCECE Agriculture and Other Allied Courses 2024",
     "full_name": "Jharkhand Combined Entrance Competitive Examination for Agriculture and Other Allied Courses 2024",
@@ -17056,19 +17000,6 @@
     "status": "Admission Over"
   },
   {
-<<<<<<< HEAD
-    "id": "14612",
-    "short_name": "PGIMER DM / M.Ch. 2021 July Session",
-    "full_name": "Postgraduate Institute of Medical Education and Research Entrance Exam for DM / M.Ch. 2021 July Session",
-    "exam_link": "https://www.mynextexam.com/exam/pgimer-dm-mch-july-session",
-    "exam_mode": "Online",
-    "application_dates": "24 Mar, 2021 - 24 Apr, 2021",
-    "exam_dates": "15 Jun, 2021",
-    "status": "Admission Over"
-  },
-  {
-=======
->>>>>>> 1cf1fe5bab816ef37d3e8a3fe74d6b748c5cf628
     "id": "13770",
     "short_name": "PGIMER MD (Hospital Administration) 2021 January Session",
     "full_name": "Postgraduate Institute of Medical Education and Research Entrance Exam for MD (Hospital Administration) 2021 January Session",

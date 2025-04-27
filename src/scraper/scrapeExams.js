@@ -1,4 +1,6 @@
 
+
+
 // import axios from "axios";
 // import * as cheerio from "cheerio";
 // import fs from "fs/promises";
@@ -33,11 +35,9 @@
 //         const id = $(element).attr('id') || 'N/A';
 //         const short_name = $(element).find('.details h2.short-name').text().trim() || 'N/A';
 //         const full_name = $(element).find('.item-details .full-name').text().trim() || 'N/A';
-//         const relativeLink = $(element).find('a').attr('href');
-//         const exam_link = relativeLink
-//         ? `https://www.mynextexam.com${relativeLink}`
-//         : 'N/A';
-
+//         const exam_link = $(element).find('.details h2.short-name a').attr('href')
+//           ? `https://www.mynextexam.com${$(element).find('.details h2.short-name a').attr('href')}`
+//           : 'N/A';
 //         const exam_mode = $(element).find('.other-details:contains("Exam Mode")').find('.txt').text().trim() || 'N/A';
 //         const application_dates = $(element).find('.other-details:contains("Application Start-End Dates")').find('.txt').text().trim() || 'N/A';
 //         const exam_dates = $(element).find('.other-details:contains("Exam Dates")').find('.txt').text().trim() || 'N/A';
@@ -84,7 +84,7 @@
 // // Run the script
 // runScraper();
 
-
+// src/scraper/scrapeExams.js
 
 import axios from "axios";
 import * as cheerio from "cheerio";
@@ -111,7 +111,7 @@ export default async function scrapeExams() {
           "Accept-Language": "en-US,en;q=0.9",
           "Accept-Encoding": "gzip, deflate, br",
         },
-        timeout: 60000 // 20 seconds timeout
+        timeout: 60000 // 60 seconds timeout
       });
 
       const $ = cheerio.load(data);
@@ -120,10 +120,11 @@ export default async function scrapeExams() {
         const id = $(element).attr('id') || 'N/A';
         const short_name = $(element).find('.details h2.short-name').text().trim() || 'N/A';
         const full_name = $(element).find('.item-details .full-name').text().trim() || 'N/A';
-        const relativeLink = $(element).find('a').attr('href');
+        
+        const relativeLink = $(element).find('.details h2.short-name a').attr('href');
         const exam_link = relativeLink
-        ? `https://www.mynextexam.com${relativeLink}`
-        : 'N/A';
+          ? `https://www.mynextexam.com${relativeLink}`
+          : 'N/A';
 
         const exam_mode = $(element).find('.other-details:contains("Exam Mode")').find('.txt').text().trim() || 'N/A';
         const application_dates = $(element).find('.other-details:contains("Application Start-End Dates")').find('.txt').text().trim() || 'N/A';
