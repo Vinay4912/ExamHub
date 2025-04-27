@@ -1,36 +1,44 @@
 "use client";
 
+import { useEffect } from "react";
 import { useUser } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
-import { FaRegBell, FaSearch, FaUserCircle, FaGraduationCap, FaUsers, FaChartLine } from "react-icons/fa";
+import {
+  FaGraduationCap,
+  FaUsers,
+  FaChartLine
+} from "react-icons/fa";
 import { motion } from "framer-motion";
 
 export default function About() {
   const { isSignedIn } = useUser();
   const router = useRouter();
 
+  useEffect(() => {
+    if (!isSignedIn) {
+      router.push("/");
+    }
+  }, [isSignedIn, router]);
+
+  if (!isSignedIn) return null;
+
   const features = [
     {
       icon: <FaGraduationCap className="text-4xl text-blue-600 dark:text-blue-400" />,
       title: "Comprehensive Coverage",
-      description: "Access information about a wide range of competitive exams across different fields and levels."
+      description: "Access information about a wide range of competitive exams across different fields and levels.",
     },
     {
       icon: <FaUsers className="text-4xl text-blue-600 dark:text-blue-400" />,
       title: "Community Driven",
-      description: "Join a community of like-minded students and share experiences and resources."
+      description: "Join a community of like-minded students and share experiences and resources.",
     },
     {
       icon: <FaChartLine className="text-4xl text-blue-600 dark:text-blue-400" />,
       title: "Progress Tracking",
-      description: "Monitor your preparation progress and get personalized recommendations."
+      description: "Monitor your preparation progress and get personalized recommendations.",
     }
-  ]
-
-  if (!isSignedIn) {
-    router.push("/");
-    return null;
-  }
+  ];
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
@@ -112,4 +120,4 @@ export default function About() {
       </div>
     </div>
   );
-} 
+}
